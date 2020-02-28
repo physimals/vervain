@@ -88,7 +88,7 @@ kwargs = {
     'packages' : find_packages(),
     'entry_points' : {
         'console_scripts' : [
-            "verbena=verbena.main:main",
+            "vervain=verbena.main:main",
         ],
     },
     'classifiers' : [
