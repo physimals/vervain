@@ -1,32 +1,30 @@
-# VERBENA: Vascular Model Based Perfusion Quantification for DSC-MRI
+# VERVAIN: Vascular Model Based Perfusion Quantification for DSC-MRI
 
-Verbena is a Bayesian Inference tool for quantification of perfusion and other 
+VERVAIN is a Python based Bayesian Inference tool for quantification of perfusion and other 
 haemodynamic parameters from Dynamic Susceptibility Contrast perfusion MRI of 
-the brain. VERBENA complements the BASIL tools for the quantification of 
+the brain. VERVAIN complements the BASIL tools for the quantification of 
 perfusion using Arterial Spin Labelling MRI and is built on the same core
-inference algorithm (FABBER). VERBENA uses a specific physiological model for 
+inference algorithm (FABBER). VERVAIN uses a specific physiological model for 
 capillary transit of contrast within the blood generally termed the 'vascular 
-model' that was first described by Ostergaard (see below). In VERBENA the model 
+model' that was first described by Ostergaard (see below). In VERVAIN the model 
 has been extended to explicitly infer the mean transit time and also to 
 optionally include correction for macro vascular contamination - contrast agent 
 within arterial vessels - more information on the model can be found in the 
 theory section.
 
-VERBENA takes a model-based approach to the analysis of DSC-MRI data in 
+VERVAIN takes a model-based approach to the analysis of DSC-MRI data in 
 contrast to alternative 'non-parametric' approaches, that often use a Singular 
 Value based Deconvolution to quantify perfusion. An alternative Bayesian 
 Deconvolution approach is also available, but not currently distributed as part 
 of FSL. For more information see the reference below and contact the senior 
 author.
 
-VERBENA is scheduled for a future release of FSL (it is not to be found in the 
-current release). However, if you are interested in using VERBENA, it is 
-possible to provide a pre-release copy that is compatible with more recent 
-FSL releases.
+VERVAIN is designed to be compatible with the FSL tool VERBNEA, althought with
+some additional functionality. FSL 6.0.1 or more recent is required.
 
 ## Referencing
 
-If you use VERBENA in your research, please make sure that you reference the 
+If you use VERVAIN in your research, please make sure that you reference the 
 first article listed below.
 
 *Chappell, M.A., Mehndiratta, A., Calamante F., "Correcting for large vessel 
@@ -34,7 +32,7 @@ contamination in DSC perfusion MRI by extension to a physiological model of the
 vasculature", e-print ahead of publication. doi: 10.1002/mrm.25390*
 
 The following articles provide more background on the original vascular model 
-from which the VERBENA model is derived:
+from which the VERVAIN model is derived:
 
 *Mouridsen K, Friston K, Hjort N, Gyldensted L, Østergaard L, Kiebel S. Bayesian 
 estimation of cerebral perfusion using a physiological model of microvasculature. 

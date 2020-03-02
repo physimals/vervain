@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Setup script for verbena
+Setup script for vervain
 """
 import os
 import subprocess
@@ -10,7 +10,7 @@ import io
 from setuptools import setup
 from setuptools import find_packages
 
-MODULE = 'verbena'
+MODULE = 'vervain'
 
 def get_filetext(rootdir, filename):
     """ Get the text of a local file """
@@ -75,12 +75,12 @@ def get_version(rootdir):
 module_dir = os.path.abspath(os.path.dirname(__file__))
 
 kwargs = {
-    'name' : 'verbena',
+    'name' : 'vervain',
     'version' : get_version(module_dir),
     'description' : 'Python library for modelling DSC-MRI data',
     'long_description' : get_filetext(module_dir, 'README.md'),
     'long_description_content_type' : 'text/markdown',
-    'url' : 'https://verbena.readthedocs.io/',
+    'url' : 'https://vervain.readthedocs.io/',
     'author' : 'Martin Craig',
     'author_email' : 'martin.craig@eng.ox.ac.uk',
     'license' : 'License granted by University of Oxford for use by academics carrying out research and not for use by consumers or commercial businesses. See LICENSE file for more details',
@@ -88,7 +88,7 @@ kwargs = {
     'packages' : find_packages(),
     'entry_points' : {
         'console_scripts' : [
-            "vervain=verbena.main:main",
+            "vervain=vervain.main:main",
         ],
     },
     'classifiers' : [

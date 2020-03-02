@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Verbena documentation build configuration file
+# Vervain documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -20,7 +20,7 @@ extensions = [
 templates_path = ['_templates']
 source_suffix = '.rst'
 master_doc = 'index'
-project = u'Verbena'
+project = u'Vervain'
 copyright = u'2019, Martin Craig'
 author = u'Martin Craig'
 build_dir = u"_build"
@@ -59,6 +59,6 @@ latex_elements = {
 }
 
 latex_documents = [
-    (master_doc, 'verbena.tex', u'Verbena documentation',
+    (master_doc, 'vervain.tex', u'Vervain documentation',
      u'Martin Craig', 'manual'),
 ]

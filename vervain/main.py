@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Verbena: Perfusion quantification from DSC-MRI using the Vascular Model
+Vervain: Perfusion quantification from DSC-MRI using the Vascular Model
 
 Michael Chappell, QuBIc & FMRIB Image Analysis Group
 
@@ -19,7 +19,7 @@ from fabber import Fabber, FabberException
 from oxasl import Workspace
 from oxasl.wrappers import fabber, mvntool
 
-from verbena._version import __version__
+from vervain._version import __version__
 
 if __name__ == "__main__":
     main()
@@ -28,7 +28,7 @@ def main():
     """
     Command line tool entry point
     """
-    parser = OptionParser(usage="verbena -i <DSC input file> [options...]", version=__version__)
+    parser = OptionParser(usage="vervain -i <DSC input file> [options...]", version=__version__)
     parser.add_option("--data", "-i", help="DSC input file")
     parser.add_option("--aif", "-a", help="Voxelwise AIF image file")
     parser.add_option("--output", "-o", help="Output directory")
@@ -47,7 +47,7 @@ def main():
 
     options, _ = parser.parse_args()
     if not options.output:
-        options.output = "verbena_out"
+        options.output = "vervain_out"
 
     if not options.data:
         sys.stderr.write("Input data file not specified\n")
@@ -70,7 +70,7 @@ def main():
         sys.exit(1)
 
     wsp = Workspace(savedir=options.output, **vars(options))
-    wsp.log.write("Verbena %s\n" % __version__)
+    wsp.log.write("Vervain %s\n" % __version__)
     wsp.dscdata = Image(wsp.data)
     wsp.aif = Image(wsp.aif)
     
@@ -87,7 +87,7 @@ def main():
     if not wsp.modelfree:
         do_vascular_model(wsp)
 
-    wsp.log.write("\nVerbena DONE\n")
+    wsp.log.write("\nVervain DONE\n")
 
 def get_mask(wsp):
     """
